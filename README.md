@@ -13,11 +13,11 @@ A public web page with six sections:
 
 | Section | What goes there |
 |---|---|
-| Home | My name is Carlos Andres Lozano Gonzalez, my role is student in technical professional web programing and this is my web sites where you looking me such as: |
-| About | i live in th|
-| Skills | Your technical and professional skills |
-| Resume | Your education and your experience |
-| Projects | The projects you have built |
+| Home | My name is Carlos Andres Lozano Gonzalez, my role is student in technical professional web programing and this is my web sites where you looking me such as my github https://github.com/carlos24MK/carlos-web-profile.git and my gmail is lozanogonzalezcarlosandres@gmail.com: |
+| About | i live in saldaña Tolima, i like study English and study about my career that is engineer System|
+| Skills | my technical skills include HTML, Programing web and javascript|
+| Resume | i have been study English when i was 13 years old, because always I have always liked studying foreign languages. |
+| Projects | I am currently learning web programming, so I am still developing my technical skills. In the future, I hope to build and publish my own web projects.|
 | Contact | How people can reach you |
 
 ---
