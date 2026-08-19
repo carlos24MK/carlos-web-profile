@@ -13,8 +13,8 @@ A public web page with six sections:
 
 | Section | What goes there |
 |---|---|
-| Home | My name is Carlos Andres Lozano Gonzalez, my role is student, your links |
-| About | Two or three sentences about you |
+| Home | My name is Carlos Andres Lozano Gonzalez, my role is student in technical professional web programing and this is my web sites where you looking me such as: |
+| About | i live in th|
 | Skills | Your technical and professional skills |
 | Resume | Your education and your experience |
 | Projects | The projects you have built |
