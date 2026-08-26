@@ -1,1236 +1,351 @@
 <!DOCTYPE html>
 <!--
   ============================================================
-  WEB PROFILE · CARLOS ANDRES LOZANO GONZALEZ
-  Técnico Profesional en Programación Web
+  WEB PROFILE TEMPLATE  ·  Técnico Profesional en Programación Web
   Institución Universitaria de El Espinal - UniEspinal
   Inglés I / Inglés II
   ============================================================
+
+  HOW TO USE THIS FILE
+  1. Replace every text inside [square brackets] with your own information.
+  2. Every visible text has a data-i18n attribute. The actual words live in
+     script.js, inside the ES and EN dictionaries. Edit them there.
+  3. Do NOT delete the data-i18n attributes. They connect this file to the
+     language switcher.
+  4. Never add your home address, your phone number or your ID number.
+     A public profile does not need them.
+  ============================================================
 -->
-
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>
-    Carlos Andres Lozano Gonzalez · Web Programming Student
-  </title>
+  <!-- [Replace with your name] -->
+  <title>Carlos Andres Lozano Gonzalez · Web Developer</title>
+  <meta name="description" content="Web Programming student at UniEspinal, Colombia.">
 
-  <meta
-    name="description"
-    content="Web Programming student at UniEspinal interested in web development, technology and English."
-  >
-
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  >
-
-  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <!-- CSS -->
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
-
-  <!-- ===================================================== -->
-  <!-- HEADER -->
-  <!-- ===================================================== -->
-
+  <!-- ========================= HEADER ========================= -->
   <div class="contenedor-header">
-
     <header>
-
-      <!-- LOGO -->
-
       <div class="logo">
-
-        <a href="#inicio">
-          Carlos
-        </a>
-
+        <!-- [Replace with your name or a short nickname] -->
+        <a href="#inicio">Carlos</a>
       </div>
-
-
-      <!-- NAVIGATION -->
 
       <nav id="nav">
-
         <ul>
-
-          <li>
-
-            <a
-              href="#inicio"
-              data-i18n="nav.home"
-              onclick="cerrarMenu()"
-            >
-              INICIO
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a
-              href="#sobremi"
-              data-i18n="nav.about"
-              onclick="cerrarMenu()"
-            >
-              SOBRE MÍ
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a
-              href="#skills"
-              data-i18n="nav.skills"
-              onclick="cerrarMenu()"
-            >
-              HABILIDADES
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a
-              href="#curriculum"
-              data-i18n="nav.resume"
-              onclick="cerrarMenu()"
-            >
-              FORMACIÓN
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a
-              href="#portfolio"
-              data-i18n="nav.portfolio"
-              onclick="cerrarMenu()"
-            >
-              PROYECTOS
-            </a>
-
-          </li>
-
-
-          <li>
-
-            <a
-              href="#contacto"
-              data-i18n="nav.contact"
-              onclick="cerrarMenu()"
-            >
-              CONTACTO
-            </a>
-
-          </li>
-
+          <li><a href="#inicio"     data-i18n="nav.home"      onclick="cerrarMenu()">INICIO</a></li>
+          <li><a href="#sobremi"    data-i18n="nav.about"     onclick="cerrarMenu()">SOBRE MÍ</a></li>
+          <li><a href="#skills"     data-i18n="nav.skills"    onclick="cerrarMenu()">SKILLS</a></li>
+          <li><a href="#curriculum" data-i18n="nav.resume"    onclick="cerrarMenu()">FORMACIÓN</a></li>
+          <li><a href="#portfolio"  data-i18n="nav.portfolio" onclick="cerrarMenu()">PROYECTOS</a></li>
+          <li><a href="#contacto"   data-i18n="nav.contact"   onclick="cerrarMenu()">CONTACTO</a></li>
         </ul>
-
       </nav>
 
-
-      <!-- HEADER ACTIONS -->
-
       <div class="acciones-header">
-
-
         <!-- LANGUAGE SWITCHER -->
-
-        <button
-          id="btn-idioma"
-          class="btn-idioma"
-          type="button"
-          onclick="cambiarIdioma()"
-          aria-label="Switch to English"
-        >
-
-          <span class="idioma-activo">
-            ES
-          </span>
-
-          <span class="idioma-sep">
-            /
-          </span>
-
-          <span class="idioma-inactivo">
-            EN
-          </span>
-
+        <button id="btn-idioma"
+                class="btn-idioma"
+                type="button"
+                onclick="cambiarIdioma()"
+                aria-label="Switch to English">
+          <span class="idioma-activo">ES</span><span class="idioma-sep">/</span><span class="idioma-inactivo">EN</span>
         </button>
 
-
-        <!-- RESPONSIVE MENU -->
-
-        <button
-          class="nav-responsive"
-          type="button"
-          onclick="mostrarOcultarMenu()"
-          aria-label="Menu"
-        >
-
+        <button class="nav-responsive" type="button" onclick="mostrarOcultarMenu()" aria-label="Menu">
           <i class="fa-solid fa-bars"></i>
-
         </button>
-
-
       </div>
-
-
     </header>
-
   </div>
 
-
-
-  <!-- ===================================================== -->
-  <!-- HOME / HERO -->
-  <!-- ===================================================== -->
-
-  <section
-    id="inicio"
-    class="inicio"
-  >
-
-
+  <!-- ========================= HERO ========================= -->
+  <section id="inicio" class="inicio">
     <div class="contenido-banner">
-
-
-      <!-- PROFILE PHOTO -->
-
       <div class="contenedor-img">
-
-        <img
-          src="images/profile.jpg"
-          alt="Carlos Andres Lozano Gonzalez profile photo"
-          onerror="this.style.display='none'"
-        >
-
+        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
+        <img src="images/profile.jpg" alt="Profile photo" onerror="this.style.display='none'">
       </div>
 
-
-      <!-- NAME -->
-
-      <h1>
-        CARLOS ANDRES LOZANO GONZALEZ
-      </h1>
-
-
-      <!-- ROLE -->
-
-      <h2 data-i18n="hero.role">
-        Estudiante de Técnico Profesional en Programación Web
-      </h2>
-
-
-      <!-- SOCIAL NETWORKS -->
+      <!-- [Replace with your full name] -->
+      <h1>CARLOS ANDRES LOZANO GONZALEZ</h1>
+      <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
 
       <div class="redes">
-
-
-        <!-- GitHub -->
-
-        <a
-          href="https://github.com/carlos24MK"
-          target="_blank"
-          rel="noopener"
-          aria-label="GitHub"
-        >
-
-          <i class="fa-brands fa-github"></i>
-
-        </a>
-
-
-        <!-- Email -->
-
-        <a
-          href="mailto:lozanogonzalezcarlosandres@gmail.com"
-          aria-label="Email"
-        >
-
-          <i class="fa-solid fa-envelope"></i>
-
-        </a>
-
-
+        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
+        <a href="https://github.com/carlos24MK" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:lozanogonzalezcarlosandres@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- ABOUT ME -->
-  <!-- ===================================================== -->
-
-  <section
-    id="sobremi"
-    class="sobremi"
-  >
-
-
+  <!-- ========================= ABOUT ========================= -->
+  <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
-
-
-      <h2 data-i18n="about.title">
-        Sobre Mí
-      </h2>
-
+      <h2 data-i18n="about.title">Sobre Mí</h2>
 
       <p data-i18n="about.text">
-
-        Vivo en Saldaña, Tolima, Colombia.
-        Me gusta estudiar inglés y aprender sobre tecnología,
-        programación y desarrollo web.
-        Mi meta profesional es convertirme en Ingeniero de Sistemas
-        y continuar mejorando mis conocimientos en programación.
-
+        Vivo en Saldaña, Tolima. Me gusta estudiar inglés y aprender sobre mi carrera profesional.
       </p>
 
-
-
       <div class="fila">
-
-
-        <!-- PERSONAL INFORMATION -->
-
         <div class="col">
-
-
-          <h3 data-i18n="about.infoTitle">
-            Información
-          </h3>
-
-
+          <h3 data-i18n="about.infoTitle">Información</h3>
+          <!--
+            SAFE FIELDS ONLY.
+            Do not add: home address, phone number, ID number, date of birth.
+          -->
           <ul class="datos">
-
-
-            <!-- LOCATION -->
-
             <li>
-
-              <strong data-i18n="about.labelLocation">
-                Ubicación
-              </strong>
-
-              <span data-i18n="about.valueLocation">
-                Saldaña, Tolima, Colombia
-              </span>
-
+              <strong data-i18n="about.labelLocation">Ubicación</strong>
+              <span data-i18n="about.valueLocation">Saldaña, Tolima, Colombia</span>
             </li>
-
-
-
-            <!-- EMAIL -->
-
             <li>
-
-              <strong data-i18n="about.labelEmail">
-                Correo
-              </strong>
-
-              <span>
-                lozanogonzalezcarlosandres@gmail.com
-              </span>
-
+              <strong data-i18n="about.labelEmail">Correo</strong>
+              <span>lozanogonzalezcarlosandres@gmail.com</span>
             </li>
-
-
-
-            <!-- LANGUAGES -->
-
             <li>
-
-              <strong data-i18n="about.labelLanguages">
-                Idiomas
-              </strong>
-
-              <span data-i18n="about.valueLanguages">
-                Español (nativo) · Inglés (en aprendizaje)
-              </span>
-
+              <strong data-i18n="about.labelLanguages">Idiomas</strong>
+              <span data-i18n="about.valueLanguages">Español (nativo) · Inglés (en aprendizaje)</span>
             </li>
-
-
-
-            <!-- STATUS -->
-
             <li>
-
-              <strong data-i18n="about.labelStatus">
-                Disponibilidad
-              </strong>
-
-              <span
-                class="destacado"
-                data-i18n="about.valueStatus"
-              >
-                Abierto a proyectos académicos
-              </span>
-
+              <strong data-i18n="about.labelStatus">Disponibilidad</strong>
+              <span class="destacado" data-i18n="about.valueStatus">Abierto a prácticas</span>
             </li>
-
-
           </ul>
-
-
         </div>
 
-
-
-        <!-- INTERESTS -->
-
         <div class="col">
-
-
-          <h3 data-i18n="about.interestsTitle">
-            Intereses
-          </h3>
-
-
+          <h3 data-i18n="about.interestsTitle">Intereses</h3>
           <div class="contenedor-intereses">
-
-
-            <!-- PROGRAMMING -->
-
+            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
-
               <i class="fa-solid fa-code"></i>
-
-              <span data-i18n="interest.1">
-                PROGRAMACIÓN
-              </span>
-
+              <span data-i18n="interest.1">CÓDIGO</span>
             </div>
-
-
-
-            <!-- ENGLISH -->
-
             <div class="interes">
-
-              <i class="fa-solid fa-language"></i>
-
-              <span data-i18n="interest.2">
-                INGLÉS
-              </span>
-
+              <i class="fa-solid fa-headset"></i>
+              <span data-i18n="interest.2">SOPORTE</span>
             </div>
-
-
-
-            <!-- TECHNOLOGY -->
-
             <div class="interes">
-
-              <i class="fa-solid fa-laptop-code"></i>
-
-              <span data-i18n="interest.3">
-                TECNOLOGÍA
-              </span>
-
+              <i class="fa-solid fa-book-open"></i>
+              <span data-i18n="interest.3">LECTURA</span>
             </div>
-
-
-
-            <!-- LEARNING -->
-
             <div class="interes">
-
-              <i class="fa-solid fa-graduation-cap"></i>
-
-              <span data-i18n="interest.4">
-                APRENDIZAJE
-              </span>
-
+              <i class="fa-solid fa-gamepad"></i>
+              <span data-i18n="interest.4">JUEGOS</span>
             </div>
-
-
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- SKILLS -->
-  <!-- ===================================================== -->
-
-  <section
-    id="skills"
-    class="skills"
-  >
-
-
+  <!-- ========================= SKILLS ========================= -->
+  <!--
+    To change a skill: edit the label, and edit data-percent.
+    The bar width and the number are both taken from data-percent,
+    so you only change it in ONE place.
+  -->
+  <section id="skills" class="skills">
     <div class="contenido-seccion">
-
-
-      <h2 data-i18n="skills.title">
-        Habilidades
-      </h2>
-
-
+      <h2 data-i18n="skills.title">Habilidades</h2>
 
       <div class="fila">
-
-
-
-        <!-- TECHNICAL SKILLS -->
-
         <div class="col">
-
-
-          <h3 data-i18n="skills.technical">
-            Habilidades técnicas
-          </h3>
-
-
-
-          <!-- HTML AND CSS -->
+          <h3 data-i18n="skills.technical">Habilidades técnicas</h3>
 
           <div class="skill">
-
-            <span class="skill-nombre">
-              HTML &amp; CSS
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="70"
-              >
-
-                <span>
-                  70%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre">HTML &amp; CSS</span>
+            <div class="barra-skill"><div class="progreso" data-percent="70"><span>70%</span></div></div>
           </div>
-
-
-
-          <!-- WEB PROGRAMMING -->
-
           <div class="skill">
-
-            <span
-              class="skill-nombre"
-              data-i18n="skill.webProgramming"
-            >
-              Programación Web
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="65"
-              >
-
-                <span>
-                  65%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre">JavaScript</span>
+            <div class="barra-skill"><div class="progreso" data-percent="55"><span>55%</span></div></div>
           </div>
-
-
-
-          <!-- JAVASCRIPT -->
-
           <div class="skill">
-
-            <span class="skill-nombre">
-              JavaScript
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="55"
-              >
-
-                <span>
-                  55%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre">Programación Web</span>
+            <div class="barra-skill"><div class="progreso" data-percent="45"><span>45%</span></div></div>
           </div>
-
-
-
-          <!-- GIT -->
-
           <div class="skill">
-
-            <span class="skill-nombre">
-              Git &amp; GitHub
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="60"
-              >
-
-                <span>
-                  60%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre">Git &amp; GitHub</span>
+            <div class="barra-skill"><div class="progreso" data-percent="60"><span>60%</span></div></div>
           </div>
-
-
         </div>
 
-
-
-        <!-- PROFESSIONAL SKILLS -->
-
         <div class="col">
-
-
-          <h3 data-i18n="skills.professional">
-            Habilidades profesionales
-          </h3>
-
-
-
-          <!-- LEARNING -->
+          <h3 data-i18n="skills.professional">Habilidades profesionales</h3>
 
           <div class="skill">
-
-            <span
-              class="skill-nombre"
-              data-i18n="skill.learning"
-            >
-              Aprendizaje continuo
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="85"
-              >
-
-                <span>
-                  85%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre" data-i18n="skill.support">Soporte al usuario</span>
+            <div class="barra-skill"><div class="progreso" data-percent="80"><span>80%</span></div></div>
           </div>
-
-
-
-          <!-- TEAMWORK -->
-
           <div class="skill">
-
-            <span
-              class="skill-nombre"
-              data-i18n="skill.teamwork"
-            >
-              Trabajo en equipo
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="80"
-              >
-
-                <span>
-                  80%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre" data-i18n="skill.teamwork">Trabajo en equipo</span>
+            <div class="barra-skill"><div class="progreso" data-percent="85"><span>85%</span></div></div>
           </div>
-
-
-
-          <!-- PROBLEM SOLVING -->
-
           <div class="skill">
-
-            <span
-              class="skill-nombre"
-              data-i18n="skill.problem"
-            >
-              Resolución de problemas
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="75"
-              >
-
-                <span>
-                  75%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre" data-i18n="skill.problem">Resolución de problemas</span>
+            <div class="barra-skill"><div class="progreso" data-percent="75"><span>75%</span></div></div>
           </div>
-
-
-
-          <!-- ENGLISH -->
-
           <div class="skill">
-
-            <span
-              class="skill-nombre"
-              data-i18n="skill.english"
-            >
-              Inglés
-            </span>
-
-            <div class="barra-skill">
-
-              <div
-                class="progreso"
-                data-percent="55"
-              >
-
-                <span>
-                  55%
-                </span>
-
-              </div>
-
-            </div>
-
+            <span class="skill-nombre" data-i18n="skill.english">Inglés técnico</span>
+            <div class="barra-skill"><div class="progreso" data-percent="65"><span>65%</span></div></div>
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- RESUME -->
-  <!-- ===================================================== -->
-
-  <section
-    id="curriculum"
-    class="curriculum"
-  >
-
-
+  <!-- ========================= RESUME ========================= -->
+  <section id="curriculum" class="curriculum">
     <div class="contenido-seccion">
-
-
-      <h2 data-i18n="resume.title">
-        Formación y experiencia
-      </h2>
-
-
+      <h2 data-i18n="resume.title">Formación y experiencia</h2>
 
       <div class="fila">
-
-
-
         <!-- EDUCATION -->
-
         <div class="col izquierda">
-
-
-          <h3 data-i18n="resume.education">
-            Formación
-          </h3>
-
-
-
-          <!-- WEB PROGRAMMING -->
+          <h3 data-i18n="resume.education">Formación</h3>
 
           <div class="item izq">
-
-
-            <h4 data-i18n="edu.1.title">
-              Técnico Profesional en Programación Web
-            </h4>
-
-
-            <span class="casa">
-              Institución Universitaria de El Espinal - UniEspinal
-            </span>
-
-
-            <span class="fecha">
-              2025 - Actualidad
-            </span>
-
-
-            <p data-i18n="edu.1.text">
-
-              Actualmente estudio programación web y desarrollo
-              habilidades relacionadas con desarrollo web,
-              programación, bases de datos y tecnologías de la
-              información.
-
-            </p>
-
-
-            <div class="conectori">
-
-              <div class="circuloi"></div>
-
-            </div>
-
-
+            <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha">2025 - Actualidad</span>
+            <p data-i18n="edu.1.text">Actualmente estudio el Técnico Profesional en Programación Web.</p>
+            <div class="conectori"><div class="circuloi"></div></div>
           </div>
-
-
-
-          <!-- ENGLISH -->
 
           <div class="item izq">
-
-
-            <h4 data-i18n="edu.2.title">
-              Formación en Inglés
-            </h4>
-
-
-            <span class="casa">
-              Formación académica
-            </span>
-
-
-            <span class="fecha">
-              Desde los 13 años
-            </span>
-
-
-            <p data-i18n="edu.2.text">
-
-              He estudiado inglés desde los 13 años porque
-              siempre me ha interesado aprender idiomas extranjeros
-              y mejorar mis habilidades de comunicación.
-
-            </p>
-
-
-            <div class="conectori">
-
-              <div class="circuloi"></div>
-
-            </div>
-
-
+            <h4 data-i18n="edu.2.title">Formación en Inglés</h4>
+            <span class="casa">Formación académica</span>
+            <span class="fecha">Desde los 13 años</span>
+            <p data-i18n="edu.2.text">He estudiado inglés desde los 13 años porque siempre me ha gustado aprender idiomas extranjeros.</p>
+            <div class="conectori"><div class="circuloi"></div></div>
           </div>
-
-
         </div>
-
-
 
         <!-- EXPERIENCE -->
-
         <div class="col derecha">
+          <h3 data-i18n="resume.experience">Experiencia</h3>
 
-
-          <h3 data-i18n="resume.experience">
-            Experiencia
-          </h3>
-
-
-
-          <!-- ACADEMIC PROJECTS -->
-
+          <!--
+            No work experience yet? That is normal.
+            Use academic projects, volunteer work or freelance jobs.
+            Describe what you DID, using action verbs: built, configured, fixed, tested.
+          -->
           <div class="item der">
-
-
-            <h4 data-i18n="exp.1.title">
-              Proyectos académicos de desarrollo web
-            </h4>
-
-
-            <span class="casa">
-              UniEspinal
-            </span>
-
-
-            <span class="fecha">
-              2025 - Actualidad
-            </span>
-
-
-            <p data-i18n="exp.1.text">
-
-              He desarrollado ejercicios y proyectos académicos
-              utilizando HTML, CSS, JavaScript, Git y GitHub
-              como parte de mi formación en programación web.
-
-            </p>
-
-
-            <div class="conectord">
-
-              <div class="circulod"></div>
-
-            </div>
-
-
+            <h4 data-i18n="exp.1.title">Programación Web</h4>
+            <span class="casa">UniEspinal</span>
+            <span class="fecha">Actualidad</span>
+            <p data-i18n="exp.1.text">Actualmente estoy aprendiendo programación web y desarrollando mis habilidades técnicas.</p>
+            <div class="conectord"><div class="circulod"></div></div>
           </div>
 
-
-
-          <!-- CONTINUOUS LEARNING -->
-
           <div class="item der">
-
-
-            <h4 data-i18n="exp.2.title">
-              Aprendizaje de tecnologías web
-            </h4>
-
-
-            <span class="casa">
-              Proyectos personales y académicos
-            </span>
-
-
-            <span class="fecha">
-              Actualidad
-            </span>
-
-
-            <p data-i18n="exp.2.text">
-
-              Actualmente continúo practicando programación
-              y aprendiendo nuevas herramientas para desarrollar
-              aplicaciones y sitios web.
-
-            </p>
-
-
-            <div class="conectord">
-
-              <div class="circulod"></div>
-
-            </div>
-
-
+            <h4 data-i18n="exp.2.title">Aprendizaje de desarrollo web</h4>
+            <span class="casa">Proyectos académicos</span>
+            <span class="fecha">Actualidad</span>
+            <p data-i18n="exp.2.text">Continúo aprendiendo tecnologías y herramientas relacionadas con el desarrollo web.</p>
+            <div class="conectord"><div class="circulod"></div></div>
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- PROJECTS -->
-  <!-- ===================================================== -->
-
-  <section
-    id="portfolio"
-    class="portfolio"
-  >
-
-
+  <!-- ========================= PORTFOLIO ========================= -->
+  <!--
+    This is the most important section for a junior developer.
+    Three finished small projects are better than ten unfinished ones.
+    Every card should link to the live project or to its repository.
+  -->
+  <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
-
-
-      <h2 data-i18n="portfolio.title">
-        Proyectos
-      </h2>
-
-
-      <!-- PROJECT INTRODUCTION -->
-
-      <p
-        class="portfolio-intro"
-        data-i18n="portfolio.intro"
-      >
-
-        Actualmente estoy aprendiendo programación web,
-        por lo que todavía estoy desarrollando mis habilidades técnicas.
-        En el futuro espero crear y publicar mis propios proyectos web.
-
-      </p>
-
-
+      <h2 data-i18n="portfolio.title">Proyectos</h2>
 
       <div class="galeria">
-
-
-        <!-- WEB PROFILE PROJECT -->
-
-        <a
-          class="proyecto"
-          href="https://github.com/carlos24MK/carlos-web-profile"
-          target="_blank"
-          rel="noopener"
-        >
-
-
-          <img
-            src="images/project-1.png"
-            alt="Carlos Web Profile Project"
-            onerror="this.style.opacity=0"
-          >
-
-
+        <a class="proyecto" href="https://github.com/carlos24MK/carlos-web-profile" target="_blank" rel="noopener">
+          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
           <div class="overlay">
-
-
-            <h3 data-i18n="project.1.title">
-              Web Profile
-            </h3>
-
-
-            <p data-i18n="project.1.text">
-              HTML · CSS · JavaScript
-            </p>
-
-
+            <h3 data-i18n="project.1.title">Web Profile</h3>
+            <p data-i18n="project.1.text">HTML · CSS · JavaScript</p>
           </div>
-
-
         </a>
 
+        <a class="proyecto" href="#" target="_blank" rel="noopener">
+          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
+          <div class="overlay">
+            <h3 data-i18n="project.2.title">Proyecto en desarrollo</h3>
+            <p data-i18n="project.2.text">Programación Web</p>
+          </div>
+        </a>
 
+        <a class="proyecto" href="#" target="_blank" rel="noopener">
+          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
+          <div class="overlay">
+            <h3 data-i18n="project.3.title">Proyecto en desarrollo</h3>
+            <p data-i18n="project.3.text">Programación Web</p>
+          </div>
+        </a>
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- CONTACT -->
-  <!-- ===================================================== -->
-
-  <section
-    id="contacto"
-    class="contacto"
-  >
-
-
+  <!-- ========================= CONTACT ========================= -->
+  <!--
+    A contact form needs a server to work. This template uses direct links
+    instead, so nothing here is decorative: every button really does something.
+  -->
+  <section id="contacto" class="contacto">
     <div class="contenido-seccion">
-
-
-      <h2 data-i18n="contact.title">
-        Contacto
-      </h2>
-
-
-      <p
-        class="contacto-intro"
-        data-i18n="contact.intro"
-      >
-
-        Puedes contactarme por correo electrónico
-        o visitar mi perfil de GitHub.
-
+      <h2 data-i18n="contact.title">Contacto</h2>
+      <p class="contacto-intro" data-i18n="contact.intro">
+        Puedes contactarme por correo electrónico o por medio de mi perfil de GitHub.
       </p>
 
-
-
       <div class="tarjetas-contacto">
-
-
-
-        <!-- EMAIL -->
-
-        <a
-          class="tarjeta"
-          href="mailto:lozanogonzalezcarlosandres@gmail.com"
-        >
-
-
+        <a class="tarjeta" href="mailto:lozanogonzalezcarlosandres@gmail.com">
           <i class="fa-solid fa-envelope"></i>
-
-
-          <strong data-i18n="contact.emailLabel">
-            Correo
-          </strong>
-
-
-          <span>
-            lozanogonzalezcarlosandres@gmail.com
-          </span>
-
-
+          <strong data-i18n="contact.emailLabel">Correo</strong>
+          <span>lozanogonzalezcarlosandres@gmail.com</span>
         </a>
 
-
-
-        <!-- GITHUB -->
-
-        <a
-          class="tarjeta"
-          href="https://github.com/carlos24MK"
-          target="_blank"
-          rel="noopener"
-        >
-
-
+        <a class="tarjeta" href="https://github.com/carlos24MK" target="_blank" rel="noopener">
           <i class="fa-brands fa-github"></i>
-
-
-          <strong>
-            GitHub
-          </strong>
-
-
-          <span>
-            github.com/carlos24MK
-          </span>
-
-
+          <strong>GitHub</strong>
+          <span>github.com/carlos24MK</span>
         </a>
 
-
+        <a class="tarjeta" href="#" target="_blank" rel="noopener">
+          <i class="fa-brands fa-linkedin-in"></i>
+          <strong>LinkedIn</strong>
+          <span data-i18n="contact.linkedinValue">Perfil profesional</span>
+        </a>
       </div>
-
-
     </div>
-
-
   </section>
 
-
-
-  <!-- ===================================================== -->
-  <!-- FOOTER -->
-  <!-- ===================================================== -->
-
+  <!-- ========================= FOOTER ========================= -->
   <footer>
-
-
-    <!-- BACK TO TOP -->
-
-    <a
-      href="#inicio"
-      class="arriba"
-      aria-label="Back to top"
-    >
-
+    <a href="#inicio" class="arriba" aria-label="Back to top">
       <i class="fa-solid fa-angles-up"></i>
-
     </a>
-
-
-
-    <p
-      class="footer-nota"
-      data-i18n="footer.note"
-    >
-
-      Carlos Andres Lozano Gonzalez ·
-      Técnico Profesional en Programación Web ·
-      UniEspinal
-
+    <p class="footer-nota" data-i18n="footer.note">
+      Carlos Andres Lozano Gonzalez · Técnico Profesional en Programación Web · UniEspinal
     </p>
-
-
   </footer>
 
-
-
-  <!-- ===================================================== -->
-  <!-- JAVASCRIPT -->
-  <!-- ===================================================== -->
-
   <script src="script.js"></script>
-
-
 </body>
-
 </html>
