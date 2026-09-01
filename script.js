@@ -1,22 +1,15 @@
 /* ============================================================
    WEB PROFILE TEMPLATE - SCRIPT
    UniEspinal · Técnico Profesional en Programación Web
-
-   THIS IS THE FILE YOU WILL WORK ON THE MOST.
-
-   Below there are two dictionaries: ES and EN.
-   They have exactly the same keys, but different texts.
-
-   IMPORTANT: the English version is NOT a translation of the
-   Spanish version. A professional profile in English follows
-   different rules. Read NOTES.md before you write it.
    ============================================================ */
 
 
 /* ------------------------------------------------------------
    1. SPANISH TEXTS
    ------------------------------------------------------------ */
+
 const ES = {
+
   "nav.home":      "INICIO",
   "nav.about":     "SOBRE MÍ",
   "nav.skills":    "HABILIDADES",
@@ -26,14 +19,16 @@ const ES = {
 
   "hero.role": "Desarrollador Web · Soporte Técnico",
 
-  "about.title":          "Sobre Mí",
-  "about.text":           "[Escribe aquí dos o tres frases sobre ti: qué estudias, qué te interesa dentro del desarrollo web y qué estás buscando ahora.]",
+  "about.title": "Sobre Mí",
+
+  "about.text": "Soy estudiante de programación web y disfruto aprender sobre tecnología. Me gusta estudiar inglés, jugar videojuegos y mejorar mis conocimientos en programación, especialmente con Laravel. Me considero una persona extrovertida e introvertida dependiendo del ambiente. Me gusta mucho mi carrera y quiero seguir creciendo como desarrollador y aprendiendo nuevas herramientas.",
+
   "about.infoTitle":      "Información",
   "about.labelLocation":  "Ubicación",
-  "about.valueLocation":  "[Ciudad], Colombia",
+  "about.valueLocation":  "Saldaña, Tolima, Colombia",
   "about.labelEmail":     "Correo",
   "about.labelLanguages": "Idiomas",
-  "about.valueLanguages": "Español (nativo) · Inglés ([tu nivel])",
+  "about.valueLanguages": "Español (nativo) · Inglés (B1)",
   "about.labelStatus":    "Disponibilidad",
   "about.valueStatus":    "Abierto a prácticas",
   "about.interestsTitle": "Intereses",
@@ -56,41 +51,47 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
-  "edu.1.text":  "[Una o dos frases sobre lo que estás aprendiendo y qué sabes hacer ahora.]",
-  "edu.2.title": "[Curso o certificación]",
-  "edu.2.text":  "[Qué aprendiste y para qué te sirve.]",
+  "edu.1.text":  "Actualmente estudio el Técnico Profesional en Programación Web.",
 
-  "exp.1.title": "[Rol o tipo de proyecto]",
-  "exp.1.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
-  "exp.2.title": "[Rol o tipo de proyecto]",
-  "exp.2.text":  "[Qué hiciste, con qué herramientas y qué resultado tuvo.]",
+  "edu.2.title": "Formación en Inglés",
+  "edu.2.text":  "He estudiado inglés desde los 13 años porque siempre me ha gustado aprender idiomas extranjeros.",
+
+  "exp.1.title": "Programación Web",
+  "exp.1.text":  "Actualmente estoy aprendiendo programación web y desarrollando mis habilidades técnicas.",
+
+  "exp.2.title": "Aprendizaje de desarrollo web",
+  "exp.2.text":  "Continúo aprendiendo tecnologías y herramientas relacionadas con el desarrollo web.",
 
   "portfolio.title": "Proyectos",
-  "project.1.title": "[Nombre del proyecto]",
-  "project.1.text":  "[Tecnologías usadas]",
-  "project.2.title": "[Nombre del proyecto]",
-  "project.2.text":  "[Tecnologías usadas]",
-  "project.3.title": "[Nombre del proyecto]",
-  "project.3.text":  "[Tecnologías usadas]",
 
-  "contact.title":         "Contacto",
-  "contact.intro":         "[Una frase invitando a escribirte. Por ejemplo: ¿Tienes un proyecto o una vacante? Escríbeme.]",
-  "contact.emailLabel":    "Correo",
-  "contact.linkedinValue": "[Tu perfil profesional]",
+  "project.1.title": "Web Profile",
+  "project.1.text":  "HTML · CSS · JavaScript",
 
-  "footer.note": "[Tu nombre] · Técnico Profesional en Programación Web · UniEspinal"
+  "project.2.title": "Proyecto en desarrollo",
+  "project.2.text":  "Programación Web",
+
+  "project.3.title": "Proyecto en desarrollo",
+  "project.3.text":  "Programación Web",
+
+  "contact.title": "Contacto",
+
+  "contact.intro": "Puedes contactarme por correo electrónico o por medio de mi perfil de GitHub.",
+
+  "contact.emailLabel": "Correo",
+
+  "contact.linkedinValue": "Perfil profesional",
+
+  "footer.note": "Carlos Andres Lozano Gonzalez · Técnico Profesional en Programación Web · UniEspinal"
+
 };
 
 
 /* ------------------------------------------------------------
    2. ENGLISH TEXTS
-
-   Before writing this section, remember:
-   - Use action verbs: built, configured, fixed, tested, supported.
-   - Do not include age, marital status or a home address.
-   - Do not translate word by word. Rewrite.
    ------------------------------------------------------------ */
+
 const EN = {
+
   "nav.home":      "HOME",
   "nav.about":     "ABOUT",
   "nav.skills":    "SKILLS",
@@ -100,14 +101,16 @@ const EN = {
 
   "hero.role": "Web Developer · Technical Support",
 
-  "about.title":          "About Me",
-  "about.text":           "[Write two or three sentences about yourself: what you study, what interests you in web development, and what you are looking for now.]",
+  "about.title": "About Me",
+
+  "about.text": "I am a web programming student who enjoys learning about technology. I like studying English, playing video games, and improving my programming skills, especially with Laravel. I consider myself both extroverted and introverted depending on the situation. I really enjoy my career, and I want to keep growing as a developer and learning new tools.",
+
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
-  "about.valueLocation":  "[City], Colombia",
+  "about.valueLocation":  "Saldaña, Tolima, Colombia",
   "about.labelEmail":     "Email",
   "about.labelLanguages": "Languages",
-  "about.valueLanguages": "Spanish (native) · English ([your level])",
+  "about.valueLanguages": "Spanish (native) · English (B1)",
   "about.labelStatus":    "Availability",
   "about.valueStatus":    "Open to internships",
   "about.interestsTitle": "Interests",
@@ -130,71 +133,112 @@ const EN = {
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "[One or two sentences about what you are learning and what you can do now.]",
-  "edu.2.title": "[Course or certificate]",
-  "edu.2.text":  "[What you learned and how you use it.]",
+  "edu.1.text":  "I am currently studying Professional Technician in Web Programming.",
 
-  "exp.1.title": "[Role or type of project]",
-  "exp.1.text":  "[What you did, which tools you used, and what the result was.]",
-  "exp.2.title": "[Role or type of project]",
-  "exp.2.text":  "[What you did, which tools you used, and what the result was.]",
+  "edu.2.title": "English Education",
+  "edu.2.text":  "I have studied English since I was 13 years old because I have always enjoyed learning foreign languages.",
+
+  "exp.1.title": "Web Programming",
+  "exp.1.text":  "I am currently learning web programming and developing my technical skills.",
+
+  "exp.2.title": "Web Development Learning",
+  "exp.2.text":  "I continue learning technologies and tools related to web development.",
 
   "portfolio.title": "Projects",
-  "project.1.title": "[Project name]",
-  "project.1.text":  "[Technologies used]",
-  "project.2.title": "[Project name]",
-  "project.2.text":  "[Technologies used]",
-  "project.3.title": "[Project name]",
-  "project.3.text":  "[Technologies used]",
 
-  "contact.title":         "Contact",
-  "contact.intro":         "[One sentence inviting people to write to you. Example: Have a project or a vacancy? Send me a message.]",
-  "contact.emailLabel":    "Email",
-  "contact.linkedinValue": "[Your professional profile]",
+  "project.1.title": "Web Profile",
+  "project.1.text":  "HTML · CSS · JavaScript",
 
-  "footer.note": "[Your name] · Professional Technician in Web Programming · UniEspinal"
+  "project.2.title": "Project in development",
+  "project.2.text":  "Web Programming",
+
+  "project.3.title": "Project in development",
+  "project.3.text":  "Web Programming",
+
+  "contact.title": "Contact",
+
+  "contact.intro": "You can contact me by email or through my GitHub profile.",
+
+  "contact.emailLabel": "Email",
+
+  "contact.linkedinValue": "Professional profile",
+
+  "footer.note": "Carlos Andres Lozano Gonzalez · Professional Technician in Web Programming · UniEspinal"
+
 };
 
 
 /* ============================================================
    3. LANGUAGE SWITCHER
-   You do not need to change the code below.
    ============================================================ */
 
-const DICCIONARIOS = { es: ES, en: EN };
+const DICCIONARIOS = {
+  es: ES,
+  en: EN
+};
+
 let idiomaActual = "es";
 
+
 function aplicarIdioma(idioma) {
+
   const textos = DICCIONARIOS[idioma];
+
   if (!textos) return;
 
   document.querySelectorAll("[data-i18n]").forEach(elemento => {
+
     const clave = elemento.getAttribute("data-i18n");
+
     if (textos[clave] !== undefined) {
+
       elemento.textContent = textos[clave];
+
     } else {
+
       console.warn("Missing translation key:", clave);
+
     }
+
   });
+
 
   document.documentElement.lang = idioma;
 
+
   const boton = document.getElementById("btn-idioma");
+
   if (boton) {
+
     const otro = idioma === "es" ? "en" : "es";
+
     boton.innerHTML =
-      '<span class="idioma-activo">'   + idioma.toUpperCase() + '</span>' +
+      '<span class="idioma-activo">' + idioma.toUpperCase() + '</span>' +
       '<span class="idioma-sep">/</span>' +
-      '<span class="idioma-inactivo">' + otro.toUpperCase()   + '</span>';
-    boton.setAttribute("aria-label",
-      idioma === "es" ? "Switch to English" : "Cambiar a español");
+      '<span class="idioma-inactivo">' + otro.toUpperCase() + '</span>';
+
+    boton.setAttribute(
+      "aria-label",
+      idioma === "es"
+        ? "Switch to English"
+        : "Cambiar a español"
+    );
+
   }
 
   idiomaActual = idioma;
+
 }
 
+
 function cambiarIdioma() {
-  aplicarIdioma(idiomaActual === "es" ? "en" : "es");
+
+  aplicarIdioma(
+    idiomaActual === "es"
+      ? "en"
+      : "es"
+  );
+
 }
 
 
@@ -204,51 +248,99 @@ function cambiarIdioma() {
 
 let menuVisible = false;
 
+
 function mostrarOcultarMenu() {
+
   const nav = document.getElementById("nav");
+
   menuVisible = !menuVisible;
-  nav.className = menuVisible ? "responsive" : "";
+
+  nav.className =
+    menuVisible
+      ? "responsive"
+      : "";
+
 }
 
+
 function cerrarMenu() {
+
   document.getElementById("nav").className = "";
+
   menuVisible = false;
+
 }
 
 
 /* ============================================================
    5. SKILL BARS
-
-   The width comes from the data-percent attribute in index.html.
-   You can add or remove skills freely: this code does not depend
-   on how many there are.
    ============================================================ */
 
 function animarHabilidades() {
+
   const barras = document.querySelectorAll(".progreso");
 
+
   const mostrar = barra => {
-    const porcentaje = barra.getAttribute("data-percent") || "0";
-    barra.style.width = porcentaje + "%";
-    const etiqueta = barra.querySelector("span");
-    if (etiqueta) etiqueta.textContent = porcentaje + "%";
+
+    const porcentaje =
+      barra.getAttribute("data-percent") || "0";
+
+    barra.style.width =
+      porcentaje + "%";
+
+    const etiqueta =
+      barra.querySelector("span");
+
+    if (etiqueta) {
+
+      etiqueta.textContent =
+        porcentaje + "%";
+
+    }
+
   };
 
+
   if (!("IntersectionObserver" in window)) {
+
     barras.forEach(mostrar);
+
     return;
+
   }
 
-  const observador = new IntersectionObserver((entradas, obs) => {
-    entradas.forEach(entrada => {
-      if (entrada.isIntersecting) {
-        mostrar(entrada.target);
-        obs.unobserve(entrada.target);
-      }
-    });
-  }, { threshold: 0.4 });
 
-  barras.forEach(barra => observador.observe(barra));
+  const observador =
+    new IntersectionObserver(
+      (entradas, obs) => {
+
+        entradas.forEach(entrada => {
+
+          if (entrada.isIntersecting) {
+
+            mostrar(entrada.target);
+
+            obs.unobserve(
+              entrada.target
+            );
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.4
+      }
+    );
+
+
+  barras.forEach(
+    barra =>
+      observador.observe(barra)
+  );
+
 }
 
 
@@ -256,7 +348,13 @@ function animarHabilidades() {
    6. START
    ============================================================ */
 
-document.addEventListener("DOMContentLoaded", () => {
-  aplicarIdioma("es");
-  animarHabilidades();
-});
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
+
+    aplicarIdioma("es");
+
+    animarHabilidades();
+
+  }
+);
