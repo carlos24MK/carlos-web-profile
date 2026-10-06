@@ -41,6 +41,7 @@ const ES = {
   "skills.title":        "Habilidades",
   "skills.technical":    "Habilidades técnicas",
   "skills.professional": "Habilidades profesionales",
+  "skill.web":           "Programación Web",
   "skill.support":       "Soporte al usuario",
   "skill.teamwork":      "Trabajo en equipo",
   "skill.problem":       "Resolución de problemas",
@@ -51,35 +52,48 @@ const ES = {
   "resume.experience": "Experiencia",
 
   "edu.1.title": "Técnico Profesional en Programación Web",
+  "edu.1.date":  "2026 - Actualidad",
   "edu.1.text":  "Actualmente estudio el Técnico Profesional en Programación Web.",
 
   "edu.2.title": "Formación en Inglés",
+  "edu.2.organization": "Formación académica",
+  "edu.2.date": "Desde los 13 años",
   "edu.2.text":  "He estudiado inglés desde los 13 años porque siempre me ha gustado aprender idiomas extranjeros.",
 
   "exp.1.title": "Programación Web",
-  "exp.1.text":  "Actualmente estoy aprendiendo programación web y desarrollando mis habilidades técnicas.",
+  "exp.1.date":  "Actualidad",
+  "exp.1.text":  "He adaptado una plantilla académica para crear un portafolio personal bilingüe con HTML, CSS y JavaScript.",
 
-  "exp.2.title": "Aprendizaje de desarrollo web",
-  "exp.2.text":  "Continúo aprendiendo tecnologías y herramientas relacionadas con el desarrollo web.",
+  "exp.2.title": "Proyectos académicos de desarrollo web",
+  "exp.2.organization": "Proyectos académicos",
+  "exp.2.date": "Actualidad",
+  "exp.2.text":  "He practicado desarrollo web mediante proyectos académicos. Actualmente estoy desarrollando Match Educativo con PHP y Laravel.",
 
   "portfolio.title": "Proyectos",
 
-  "project.1.title": "Web Profile",
+  "project.1.title": "Perfil web personal",
   "project.1.text":  "HTML · CSS · JavaScript",
+  "project.1.description": "Adapté una plantilla académica para crear mi portafolio personal. Presenta mi formación, habilidades y proyectos, y permite cambiar entre español e inglés.",
+  "project.1.live": "Ver página",
+  "project.1.code": "Ver código",
 
-  "project.2.title": "Proyecto en desarrollo",
-  "project.2.text":  "Programación Web",
+  "project.2.title": "Match Educativo",
+  "project.2.status": "En desarrollo",
+  "project.2.text": "PHP · Laravel",
+  "project.2.description": "Proyecto web educativo en desarrollo. He creado una API de registro de usuarios que valida los datos y aplica hash a las contraseñas. El backend utiliza PHP y Laravel.",
+  "project.2.code": "Ver código",
 
-  "project.3.title": "Proyecto en desarrollo",
-  "project.3.text":  "Programación Web",
+  "project.3.title": "Taller de saludos con Laravel",
+  "project.3.status": "Práctica académica",
+  "project.3.text": "PHP · Laravel · Blade · HTML",
+  "project.3.description": "Ejercicio académico que conecta una ruta, un controlador y una vista Blade. El controlador envía el nombre de un estudiante a una página con una plantilla reutilizable que muestra un saludo.",
+  "project.3.code": "Ver código",
 
   "contact.title": "Contacto",
 
   "contact.intro": "Puedes contactarme por correo electrónico o por medio de mi perfil de GitHub.",
 
   "contact.emailLabel": "Correo",
-
-  "contact.linkedinValue": "Perfil profesional",
 
   "footer.note": "Carlos Andres Lozano Gonzalez · Técnico Profesional en Programación Web · UniEspinal"
 
@@ -103,7 +117,7 @@ const EN = {
 
   "about.title": "About Me",
 
-  "about.text": "I am a web programming student who enjoys learning about technology. I like studying English, playing video games, and improving my programming skills, especially with Laravel. I consider myself both extroverted and introverted depending on the situation. I really enjoy my career, and I want to keep growing as a developer and learning new tools.",
+  "about.text": "I am a web programming student who enjoys learning about technology. I like studying English, playing video games, and improving my programming skills, especially with Laravel. I really enjoy my career, and I want to keep growing as a developer and learning new tools.",
 
   "about.infoTitle":      "Information",
   "about.labelLocation":  "Location",
@@ -123,6 +137,7 @@ const EN = {
   "skills.title":        "Skills",
   "skills.technical":    "Technical skills",
   "skills.professional": "Professional skills",
+  "skill.web":           "Web Programming",
   "skill.support":       "User support",
   "skill.teamwork":      "Teamwork",
   "skill.problem":       "Problem solving",
@@ -133,35 +148,48 @@ const EN = {
   "resume.experience": "Experience",
 
   "edu.1.title": "Professional Technician in Web Programming",
-  "edu.1.text":  "I am currently studying Professional Technician in Web Programming.",
+  "edu.1.date":  "2026 – Present",
+  "edu.1.text":  "I am currently studying for a professional technical qualification in Web Programming.",
 
   "edu.2.title": "English Education",
+  "edu.2.organization": "Academic training",
+  "edu.2.date": "Since age 13",
   "edu.2.text":  "I have studied English since I was 13 years old because I have always enjoyed learning foreign languages.",
 
   "exp.1.title": "Web Programming",
-  "exp.1.text":  "I am currently learning web programming and developing my technical skills.",
+  "exp.1.date":  "Present",
+  "exp.1.text":  "I have adapted an academic template to create a bilingual personal portfolio with HTML, CSS, and JavaScript.",
 
-  "exp.2.title": "Web Development Learning",
-  "exp.2.text":  "I continue learning technologies and tools related to web development.",
+  "exp.2.title": "Academic Web Development Projects",
+  "exp.2.organization": "Academic projects",
+  "exp.2.date": "Present",
+  "exp.2.text":  "I have practiced web development through academic projects. I am currently developing Match Educativo with PHP and Laravel.",
 
   "portfolio.title": "Projects",
 
-  "project.1.title": "Web Profile",
+  "project.1.title": "Personal Web Profile",
   "project.1.text":  "HTML · CSS · JavaScript",
+  "project.1.description": "I adapted an academic template to create my personal portfolio. It presents my education, skills, and projects, and lets visitors switch between Spanish and English.",
+  "project.1.live": "View live site",
+  "project.1.code": "View source code",
 
-  "project.2.title": "Project in development",
-  "project.2.text":  "Web Programming",
+  "project.2.title": "Educational Match",
+  "project.2.status": "In progress",
+  "project.2.text": "PHP · Laravel",
+  "project.2.description": "An educational web project in progress. I have created a user registration API that validates input and hashes passwords. The backend uses PHP and Laravel.",
+  "project.2.code": "View source code",
 
-  "project.3.title": "Project in development",
-  "project.3.text":  "Web Programming",
+  "project.3.title": "Laravel Greeting Workshop",
+  "project.3.status": "Academic practice",
+  "project.3.text": "PHP · Laravel · Blade · HTML",
+  "project.3.description": "An academic exercise that connects a route, a controller, and a Blade view. The controller passes a student name to a reusable page layout that displays a greeting.",
+  "project.3.code": "View source code",
 
   "contact.title": "Contact",
 
   "contact.intro": "You can contact me by email or through my GitHub profile.",
 
   "contact.emailLabel": "Email",
-
-  "contact.linkedinValue": "Professional profile",
 
   "footer.note": "Carlos Andres Lozano Gonzalez · Professional Technician in Web Programming · UniEspinal"
 

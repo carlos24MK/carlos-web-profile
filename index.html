@@ -7,7 +7,7 @@
   ============================================================
 
   HOW TO USE THIS FILE
-  1. Replace every text inside [square brackets] with your own information.
+  1. Keep the profile content accurate and up to date.
   2. Every visible text has a data-i18n attribute. The actual words live in
      script.js, inside the ES and EN dictionaries. Edit them there.
   3. Do NOT delete the data-i18n attributes. They connect this file to the
@@ -21,7 +21,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- [Replace with your name] -->
   <title>Carlos Andres Lozano Gonzalez · Web Developer</title>
   <meta name="description" content="Web Programming student at UniEspinal, Colombia.">
 
@@ -37,7 +36,6 @@
   <div class="contenedor-header">
     <header>
       <div class="logo">
-        <!-- [Replace with your name or a short nickname] -->
         <a href="#inicio">Carlos</a>
       </div>
 
@@ -73,18 +71,14 @@
   <section id="inicio" class="inicio">
     <div class="contenido-banner">
       <div class="contenedor-img">
-        <!-- [Replace profile.jpg with your own photo. Square image works best.] -->
         <img src="images/carlos.jpg" alt="Profile photo" onerror="this.style.display='none'">
       </div>
 
-      <!-- [Replace with your full name] -->
       <h1>CARLOS ANDRES LOZANO GONZALEZ</h1>
       <h2 data-i18n="hero.role">Desarrollador Web · Soporte Técnico</h2>
 
       <div class="redes">
-        <!-- [Replace the # with your real profile links. Delete the ones you do not use.] -->
         <a href="https://github.com/carlos24MK" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
         <a href="mailto:lozanogonzalezcarlosandres@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
       </div>
     </div>
@@ -93,13 +87,13 @@
   <!-- ========================= ABOUT ========================= -->
   <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
-      <h2 data-i18n="about.title">About Me</h2>
+      <h2 data-i18n="about.title">Sobre Mí</h2>
 
       <p data-i18n="about.text">
-       I am a web programming student who enjoys learning about technology. 
-        I like studying English, playing video games, and improving my programming skills, 
-        especially with Laravel. I consider myself both extroverted and introverted depending on the situation. 
-        I really enjoy my career, and I want to keep growing as a developer, learn new tools, and participate in more complete web projects in the future.
+        Soy estudiante de programación web y disfruto aprender sobre tecnología.
+        Me gusta estudiar inglés, jugar videojuegos y mejorar mis conocimientos en programación, especialmente con Laravel.
+        Me considero una persona extrovertida e introvertida dependiendo del ambiente.
+        Me gusta mucho mi carrera y quiero seguir creciendo como desarrollador y aprendiendo nuevas herramientas.
       </p>
 
       <div class="fila">
@@ -132,7 +126,6 @@
         <div class="col">
           <h3 data-i18n="about.interestsTitle">Intereses</h3>
           <div class="contenedor-intereses">
-            <!-- [Change icons and labels. Keep between 4 and 6.] -->
             <div class="interes">
               <i class="fa-solid fa-code"></i>
               <span data-i18n="interest.1">CÓDIGO</span>
@@ -178,7 +171,7 @@
             <div class="barra-skill"><div class="progreso" data-percent="30"><span>30%</span></div></div>
           </div>
           <div class="skill">
-            <span class="skill-nombre">Programación Web</span>
+            <span class="skill-nombre" data-i18n="skill.web">Programación Web</span>
             <div class="barra-skill"><div class="progreso" data-percent="45"><span>45%</span></div></div>
           </div>
           <div class="skill">
@@ -224,15 +217,15 @@
           <div class="item izq">
             <h4 data-i18n="edu.1.title">Técnico Profesional en Programación Web</h4>
             <span class="casa">UniEspinal</span>
-            <span class="fecha">2026 - Actualidad</span>
+            <span class="fecha" data-i18n="edu.1.date">2026 - Actualidad</span>
             <p data-i18n="edu.1.text">Actualmente estudio el Técnico Profesional en Programación Web.</p>
             <div class="conectori"><div class="circuloi"></div></div>
           </div>
 
           <div class="item izq">
             <h4 data-i18n="edu.2.title">Formación en Inglés</h4>
-            <span class="casa">Formación académica</span>
-            <span class="fecha">Desde los 13 años</span>
+            <span class="casa" data-i18n="edu.2.organization">Formación académica</span>
+            <span class="fecha" data-i18n="edu.2.date">Desde los 13 años</span>
             <p data-i18n="edu.2.text">He estudiado inglés desde los 13 años porque siempre me ha gustado aprender idiomas extranjeros.</p>
             <div class="conectori"><div class="circuloi"></div></div>
           </div>
@@ -250,16 +243,16 @@
           <div class="item der">
             <h4 data-i18n="exp.1.title">Programación Web</h4>
             <span class="casa">UniEspinal</span>
-            <span class="fecha">Actualidad</span>
-            <p data-i18n="exp.1.text">Actualmente estoy aprendiendo programación web y desarrollando mis habilidades técnicas.</p>
+            <span class="fecha" data-i18n="exp.1.date">Actualidad</span>
+            <p data-i18n="exp.1.text">He adaptado una plantilla académica para crear un portafolio personal bilingüe con HTML, CSS y JavaScript.</p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
 
           <div class="item der">
-            <h4 data-i18n="exp.2.title">Aprendizaje de desarrollo web</h4>
-            <span class="casa">Proyectos académicos</span>
-            <span class="fecha">Actualidad</span>
-            <p data-i18n="exp.2.text">Continúo aprendiendo tecnologías y herramientas relacionadas con el desarrollo web.</p>
+            <h4 data-i18n="exp.2.title">Proyectos académicos de desarrollo web</h4>
+            <span class="casa" data-i18n="exp.2.organization">Proyectos académicos</span>
+            <span class="fecha" data-i18n="exp.2.date">Actualidad</span>
+            <p data-i18n="exp.2.text">He practicado desarrollo web mediante proyectos académicos. Actualmente estoy desarrollando Match Educativo con PHP y Laravel.</p>
             <div class="conectord"><div class="circulod"></div></div>
           </div>
         </div>
@@ -270,37 +263,47 @@
   <!-- ========================= PORTFOLIO ========================= -->
   <!--
     This is the most important section for a junior developer.
-    Three finished small projects are better than ten unfinished ones.
-    Every card should link to the live project or to its repository.
+    Describe a completed academic project and link to its live page and source.
   -->
   <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
       <h2 data-i18n="portfolio.title">Proyectos</h2>
 
       <div class="galeria">
-        <a class="proyecto" href="https://github.com/carlos24MK/carlos-web-profile" target="_blank" rel="noopener">
-          <img src="images/project-1.png" alt="Project 1" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.1.title">Web Profile</h3>
-            <p data-i18n="project.1.text">HTML · CSS · JavaScript</p>
+        <article class="proyecto">
+          <img src="images/project-1.png" alt="Preview of my personal bilingual web profile" width="1280" height="800">
+          <div class="proyecto-contenido">
+            <h3 data-i18n="project.1.title">Perfil web personal</h3>
+            <p class="proyecto-tecnologias" data-i18n="project.1.text">HTML · CSS · JavaScript</p>
+            <p class="proyecto-descripcion" data-i18n="project.1.description">Adapté una plantilla académica para crear mi portafolio personal. Presenta mi formación, habilidades y proyectos, y permite cambiar entre español e inglés.</p>
+            <div class="proyecto-enlaces">
+              <a href="https://carlos24mk.github.io/carlos-web-profile/" target="_blank" rel="noopener" data-i18n="project.1.live">Ver página</a>
+              <a href="https://github.com/carlos24MK/carlos-web-profile" target="_blank" rel="noopener" data-i18n="project.1.code">Ver código</a>
+            </div>
           </div>
-        </a>
-
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-2.png" alt="Project 2" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.2.title">Proyecto en desarrollo</h3>
-            <p data-i18n="project.2.text">Programación Web</p>
+        </article>
+        <article class="proyecto">
+          <div class="proyecto-contenido">
+            <h3 data-i18n="project.2.title">Match Educativo</h3>
+            <p class="proyecto-estado" data-i18n="project.2.status">En desarrollo</p>
+            <p class="proyecto-tecnologias" data-i18n="project.2.text">PHP · Laravel</p>
+            <p class="proyecto-descripcion" data-i18n="project.2.description">Proyecto web educativo en desarrollo. He creado una API de registro de usuarios que valida los datos y aplica hash a las contraseñas. El backend utiliza PHP y Laravel.</p>
+            <div class="proyecto-enlaces">
+              <a href="https://github.com/carlos24MK/match-educativo" target="_blank" rel="noopener" data-i18n="project.2.code">Ver código</a>
+            </div>
           </div>
-        </a>
-
-        <a class="proyecto" href="#" target="_blank" rel="noopener">
-          <img src="images/project-3.png" alt="Project 3" onerror="this.style.opacity=0">
-          <div class="overlay">
-            <h3 data-i18n="project.3.title">Proyecto en desarrollo</h3>
-            <p data-i18n="project.3.text">Programación Web</p>
+        </article>
+        <article class="proyecto">
+          <div class="proyecto-contenido">
+            <h3 data-i18n="project.3.title">Taller de saludos con Laravel</h3>
+            <p class="proyecto-estado" data-i18n="project.3.status">Práctica académica</p>
+            <p class="proyecto-tecnologias" data-i18n="project.3.text">PHP · Laravel · Blade · HTML</p>
+            <p class="proyecto-descripcion" data-i18n="project.3.description">Ejercicio académico que conecta una ruta, un controlador y una vista Blade. El controlador envía el nombre de un estudiante a una página con una plantilla reutilizable que muestra un saludo.</p>
+            <div class="proyecto-enlaces">
+              <a href="https://github.com/carlos24MK/taller-de-laravel" target="_blank" rel="noopener" data-i18n="project.3.code">Ver código</a>
+            </div>
           </div>
-        </a>
+        </article>
       </div>
     </div>
   </section>
@@ -330,11 +333,6 @@
           <span>github.com/carlos24MK</span>
         </a>
 
-        <a class="tarjeta" href="#" target="_blank" rel="noopener">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <strong>LinkedIn</strong>
-          <span data-i18n="contact.linkedinValue">Perfil profesional</span>
-        </a>
       </div>
     </div>
   </section>

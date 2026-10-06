@@ -235,6 +235,7 @@ footer .redes a {
 
 .datos { list-style: none; }
 .datos li { margin: 12px 0; font-size: 15px; }
+.datos li span { overflow-wrap: anywhere; }
 
 .datos li strong {
   display: inline-block;
@@ -378,8 +379,10 @@ footer .redes a {
 /* ---------- PORTFOLIO ---------- */
 .galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   gap: 20px;
+  max-width: 760px;
+  margin: auto;
 }
 
 .proyecto {
@@ -388,31 +391,18 @@ footer .redes a {
   overflow: hidden;
   border-radius: 8px;
   background-color: var(--color-fondo-oscuro);
-  min-height: 200px;
   text-decoration: none;
 }
 
-.proyecto img { width: 100%; display: block; }
-
-.proyecto .overlay {
-  position: absolute;
-  inset: 0;
-  text-align: center;
-  background: rgba(28, 182, 152, .88);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 20px;
-  transition: opacity .5s;
-  font-size: 16px;
-  letter-spacing: 1px;
-  opacity: 0;
-}
-
-.proyecto:hover .overlay,
-.proyecto:focus-visible .overlay { opacity: 1; }
-
-.proyecto .overlay h3 { margin-bottom: 10px; font-size: 19px; }
+.proyecto img { width: 100%; height: auto; display: block; }
+.proyecto-contenido { padding: 24px; }
+.proyecto-contenido h3 { font-size: 24px; margin-bottom: 10px; }
+.proyecto-estado { color: var(--color-texto-suave); font-size: 14px; margin-bottom: 12px; }
+.proyecto-tecnologias { color: var(--color-acento); font-weight: 600; }
+.proyecto-descripcion { color: var(--color-texto-suave); line-height: 1.6; margin-top: 16px; }
+.proyecto-enlaces { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 22px; }
+.proyecto-enlaces a { padding: 10px 16px; border: 1px solid var(--color-acento); border-radius: 6px; text-decoration: none; font-weight: 600; }
+.proyecto-enlaces a:hover { background-color: var(--color-acento); }
 
 /* ---------- CONTACT ---------- */
 .contacto-intro {
@@ -425,7 +415,7 @@ footer .redes a {
 
 .tarjetas-contacto {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
   gap: 20px;
 }
 
@@ -507,7 +497,6 @@ footer .arriba {
   .sobremi h2, .skills h2, .curriculum h2,
   .portfolio h2, .contacto h2 { font-size: 32px; }
 
-  .proyecto .overlay { opacity: 1; background: rgba(28,182,152,.75); }
 }
 
 /* ---------- ACCESSIBILITY ---------- */
