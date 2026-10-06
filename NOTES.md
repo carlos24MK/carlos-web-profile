@@ -1,82 +1,36 @@
 # Translation Notes
 
-**Student:** [Your name]
-**Course:** [Inglés I / Inglés II]
-**Date:** [dd/mm/yyyy]
-
----
-
-## Why this file exists
-
-Your Spanish profile and your English profile are **not** the same text in two
-languages. They are two different documents for two different readers.
-
-Some examples of what changes:
-
-- A Colombian *hoja de vida* often includes a photo, an ID number, an address
-  and a date of birth. An English CV or profile does not. In many countries
-  this information is removed on purpose, because of anti-discrimination law.
-- Spanish professional writing often uses nouns: *"Manejo de bases de datos
-  relacionales."* English uses action verbs: *"Built and maintained relational
-  databases."*
-- Some technical words are never translated. Nobody writes *"marco de trabajo
-  JavaScript del lado del cliente"*. We write *framework*.
-
-This file is where you show that you understood those differences.
-
----
+**Student:** Carlos Andres Lozano Gonzalez
+**Course:** English II
+**Group:** IV B
+**Date:** October 5, 2026
 
 ## Question 1 · What did you leave out?
 
-Name **one thing** that appears in your Spanish version and does **not** appear
-in your English version. Explain why you removed it.
-
-> [Write 2–4 sentences in English.]
-
----
+I left out the sentence about being extroverted and introverted depending on the situation. I kept this sentence in my Spanish profile. In my English profile, I focused on my education, technical interests, and goals as a developer.
 
 ## Question 2 · What did you not translate?
 
-Name **one technical term** that you kept in English in both versions.
-Explain why translating it would be a bad idea.
-
-> [Write 2–4 sentences in English.]
-
----
+I kept the term Laravel in both versions. Laravel is the name of a web development framework, so its name should stay the same. Translating it would make it harder for readers to identify the technology I am learning.
 
 ## Question 3 · What was difficult?
 
-Name **one sentence** that was hard to write in English. Copy the Spanish
-version and your English version. Explain what you changed and why a
-word-by-word translation did not work.
+**Spanish:** Me gusta mucho mi carrera y quiero seguir creciendo como desarrollador y aprendiendo nuevas herramientas.
 
-> Spanish: [copy your sentence here]
->
-> English: [copy your sentence here]
->
-> [Write 2–4 sentences in English explaining the change.]
+**English:** I really enjoy my career, and I want to keep growing as a developer and learning new tools.
 
----
+Writing my personal information in English has been the most difficult part. In this sentence, I used "really enjoy" for "me gusta mucho" and "keep growing" for "seguir creciendo." These expressions keep the meaning of the Spanish sentence and sound more natural than a word-by-word translation.
 
 ## Tools
 
-You may use dictionaries, translators and AI tools. But you must say so here.
+I have used ChatGPT to organize my content and review the English text. I have also used ChatGPT to identify missing translations and help correct my web page.
 
-**Which tools did you use, and for what?**
+## Project status
 
-> [Write your answer in English. Be specific. For example: "I used
-> Cambridge Dictionary to check the difference between *develop* and
-> *design*." Or: "I used a translator for a first version of the About
-> section, and then I rewrote it because it sounded too formal."]
+My personal web profile is built with HTML, CSS, and JavaScript. Match Educativo is still in progress; its repository contains a user registration API built with PHP and Laravel. My Laravel Greeting Workshop is an academic exercise with a route, a controller, and a Blade view.
 
----
+## Self-check before submission
 
-## Self-check before you submit
-
-- [ ] Both dictionaries in `script.js` have the same keys.
-- [ ] No `[square brackets]` are left in the page.
-- [ ] My page has no address, no phone number and no ID number.
-- [ ] The language button works in both directions.
-- [ ] All my links open the correct page.
-- [ ] I read my English text out loud and it sounds natural to me.
-- [ ] I can explain my profile in English, without reading it.
+- Technical checks: compare the translation keys, test the language switch in both directions, and check images and links after publication.
+- Personal data: no home address, phone number, ID number, or date of birth is included in my profile.
+- Personal checks still to do: open the updated page in an incognito window and on a real phone, read the English text aloud, and practice explaining the profile without reading it.
